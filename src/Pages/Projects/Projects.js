@@ -25,6 +25,20 @@ function Projects() {
       description: " A deep learning project using the YOLO object detection model that is trained in the Brain Tumor dataset. Here the YOLO v8 is used.The model is trained upto 100 epochs that can give quite good accuracy.",
       TechStack: "ultralytics,pandas,numpy,matplotlib,OpenCv",
       Url: "https://colab.research.google.com/drive/1KFyT1cqoDqs7Ojc97RXoa6oHwdBbpnxY?usp=sharing"
+    },
+    {
+      id: "03",
+      prjectName: "Brain tumor detection using deep learning",
+      description: " A deep learning project using the YOLO object detection model that is trained in the Brain Tumor dataset. Here the YOLO v8 is used.The model is trained upto 100 epochs that can give quite good accuracy.",
+      TechStack: "ultralytics,pandas,numpy,matplotlib,OpenCv",
+      Url: "https://colab.research.google.com/drive/1KFyT1cqoDqs7Ojc97RXoa6oHwdBbpnxY?usp=sharing"
+    },
+    {
+      id: "03",
+      prjectName: "Brain tumor detection using deep learning",
+      description: " A deep learning project using the YOLO object detection model that is trained in the Brain Tumor dataset. Here the YOLO v8 is used.The model is trained upto 100 epochs that can give quite good accuracy.",
+      TechStack: "ultralytics,pandas,numpy,matplotlib,OpenCv",
+      Url: "https://colab.research.google.com/drive/1KFyT1cqoDqs7Ojc97RXoa6oHwdBbpnxY?usp=sharing"
     }
 
   ]
@@ -35,7 +49,7 @@ function Projects() {
 
   return (
     <>
-      <div className="grid items-center justify-center gap-y-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:lg-cols-3 items-center justify-center h-screen overflow-auto mt-5">
 
       {
   projects.map((value) => {
