@@ -2,9 +2,12 @@ import React from 'react'
 import ExampleDoc from './Resume/MUKTARUL_HOQUE-CV(2023).pdf'
 function Home() {
   return (
-    <>
-      <div className="flex items-center justify-center h-100">
+    <><div>
+      <div className="parent h-full flex items-center justify-center">
+      <div className="border h-52 w-52 bg-green-900">
         <h1>Mani</h1>
+        </div>
+      </div>
       </div>
     </>
   )
