@@ -2,6 +2,7 @@ import React from 'react'
 // import ExampleDoc from './Resume/MUKTARUL_HOQUE-CV(2023).pdf'
 import Navbar from '../../Components/Navbar'
 import './Home.css'
+import Routes from '../../Routers/Routes'
 function Home() {
     return (
         <>
@@ -9,6 +10,7 @@ function Home() {
                 <div class="grid grid-cols-2 divide-x shadow-2xl">
                     <div className="left">
                         <Navbar />
+                        <Routes/>
 
                         {/* <div className="flex items-center justify-center h-screen">
 
@@ -24,10 +26,10 @@ function Home() {
                         </div> */}
 
                         <div className="translate-x-6">
-                            <img src={require('./Img/Person.png')}/>
+                            
                         </div>
 
-                        <h1 className="Sevillana">Muktarul Hoque</h1>
+                        <h1 className="Sevillana">Muktarul Hoqsue</h1>
                     </div>
                     <div className="right flex items-center justify-center">
                         <img src={require("./Img/Person.png")} className='h-auto rounded-full border-4 border-rose-500' alt="person" />
