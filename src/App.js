@@ -1,11 +1,10 @@
 import './App.css';
-import Home from "./Pages/Home/Home"
-
+import Container from "./Pages/Container/mainContainer"
 function App() {
   return (
     <>
       <div  data-theme="light">
-        <Home />
+        <Container />
       </div>
     </>
 
