@@ -3,10 +3,10 @@ import ExampleDoc from './Resume/MUKTARUL_HOQUE-CV(2023).pdf'
 function Home() {
   return (
     <><div>
-      <div className="parent grid items-center justify-center h-screen">
-      <div className="flex items-center justify-center h-screen">
+      <div className="parent flex items-center justify-center grid items-center justify-center h-full">
+      <div className="grid items-center justify-center">
         <div>
-          <h1 className="font-semibold text-4xl">MUKTARUL HOQUE</h1>
+          <h1 className="font-semibold text-4xl name-text">MUKTARUL HOQUE</h1>
           <p>Lorem Ipsum is simply d</p>
           <div class="flex gap-4">
             <a href={ExampleDoc} download><button className="btn btn-primary  flex-auto w-45">Download Resume</button></a>

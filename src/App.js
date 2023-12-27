@@ -1,7 +1,10 @@
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
-import Container from "./Pages/Container/mainContainer"
+// import Container from "./Pages/Container/mainContainer"
+// import Layout from './layout/default'
+import Layout from './layout/default'
+
 
 function App() {
   return (
@@ -9,7 +12,7 @@ function App() {
     <>
       <ToastContainer />
       <div data-theme="light">
-        <Container />
+        <Layout/>
       </div>
     </>
 

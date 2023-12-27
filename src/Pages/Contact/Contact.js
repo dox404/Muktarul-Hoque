@@ -12,7 +12,7 @@ function Contact() {
     setLoading(true)
     await emailjs.sendForm('service_ism72rs', 'template_y10vd97', form.current, 'xUFSG0ZHbIGku9_8A')
       .then((result) => {
-        console.log(result)
+        
         toast.success('Meassage Sent', {
           position: "top-center",
           autoClose: 5000,
@@ -22,7 +22,9 @@ function Contact() {
           draggable: true,
           progress: undefined,
           theme: "light",
+          
       });
+      console.log(form)
       setLoading(false)
       }, (error) => {
         console.log(error)
@@ -42,7 +44,7 @@ function Contact() {
 
   return (
     <>
-      <div className="grid items-center justify-center h-screen">
+      <div className="grid items-center justify-center">
       <form ref={form} onSubmit={sendEmail} className="max-w-sm mx-auto w-full mt-5">
         <div className="mb-5">
           <label for="email" className="block mb-2 text-sm font-medium text-black-900">Your Name</label>
