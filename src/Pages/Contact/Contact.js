@@ -44,8 +44,8 @@ function Contact() {
 
   return (
     <>
-      <div className="grid items-center justify-center">
-      <form ref={form} onSubmit={sendEmail} className="max-w-sm mx-auto w-full mt-5">
+      <div className="grid flex items-center justify-center">
+      <form ref={form} onSubmit={sendEmail} className="max-w-sm mx-auto w-full lg:w-96 xl:w-96 2xl:w-96">
         <div className="mb-5">
           <label for="email" className="block mb-2 text-sm font-medium text-black-900">Your Name</label>
           <input type="text" id="name" name="user_name" className=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Your Full Name" required />
