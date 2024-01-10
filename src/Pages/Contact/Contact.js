@@ -1,6 +1,6 @@
 import React, { useRef ,useState} from 'react'
 import emailjs from '@emailjs/browser';
-
+import './Contact.css'
 import {toast} from 'react-toastify';
 function Contact() {
   const [loading, setLoading] = useState(false)
@@ -45,6 +45,7 @@ function Contact() {
   return (
     <>
       <div className="grid flex items-center justify-center">
+      <h1 className='justify-center items-center flex Heading text-2xl '>Contact Me</h1>
       <form ref={form} onSubmit={sendEmail} className="max-w-sm mx-auto w-full lg:w-96 xl:w-96 2xl:w-96">
         <div className="mb-5">
           <label for="email" className="block mb-2 text-sm font-medium text-black-900">Your Name</label>

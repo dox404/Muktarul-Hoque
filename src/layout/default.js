@@ -1,5 +1,5 @@
 import React from 'react'
-import './default.css'
+// import './default.css'
 import Navbar from '../Components/Navbar'
 import Routes from '../Routers/Routes'
 function layout() {
@@ -9,20 +9,22 @@ function layout() {
             <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:lg-cols-2 ">
                 <div className="left h-screen relative">
                     <Navbar />
-                    <div className="h-full flex justify-center items-center">
-                    <div>
-                        <img src={require("../assets/Img/Person.png")} className='h-40 rounded-full  border-4 border-rose-500 block lg:hidden xl:hidden 2xl:hidden m-auto' alt="person" />
-                        {/* <div className="overflow-hidden"> */}
-                        <Routes />
-                        {/* </div> */}
+                    <div className="h-full flex justify-center items-center ">
+                        <div>
+                            <img src={require("../assets/Img/Mani.jpg")} className='h-40 rounded-full  border-4 border-rose-500 block lg:hidden xl:hidden 2xl:hidden m-auto mt-10' alt="person" />
+                            {/* <div className="overflow-hidden"> */}
+                            <Routes />
+                            {/* </div> */}
                         </div>
                     </div>
 
 
 
                 </div>
-                <div className="right grid items-center justify-center h-screen bg-blue-300 hidden lg:block xl:block 2xl:block">
-                    <img src={require("../assets/Img/Person.png")} className='rounded-full border-4 border-rose-500 m-auto h-auto' alt="person" />
+                <div className="right flex h-screen justify-center items-center bg-blue-300 hidden lg:block xl:block 2xl:block">
+                    <div className='flex h-screen justify-center items-center h-97 w-92'>
+                        <img src={require("../assets/Img/Mani.jpg")} className='rounded-full border-4 border-rose-500 m-auto h-64  animate-pulse hover:animate-bounce' alt="person" />
+                    </div>
                 </div>
 
             </div>

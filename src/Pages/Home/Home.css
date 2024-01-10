@@ -1,6 +1,19 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Rubik+Doodle+Shadow&family=Sevillana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+
 .name-text {
-    font-family: Sevillana;
+    font-family:'Bebas Neue';
+}
+
+.paragraph-text{
+    font-family: 'PT Serif', serif;
+}
+
+.button{
+    border-radius:30px;
+    margin-top:10px;
 }
