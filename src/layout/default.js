@@ -5,9 +5,9 @@ import Routes from '../Routers/Routes'
 function layout() {
     return (
         <>
-            {/* <div class="w-screen h-screen"> */}
+            <div class="w-screen h-screen">
             <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:lg-cols-2">
-                <div className="left h-screen relative">
+                <div className="left h-screen">
                     <Navbar />
                     <div className="h-full flex justify-center items-center sm:overflow-y-scroll md:overflow-y-scroll">
                         <div>
@@ -33,7 +33,7 @@ function layout() {
                 </div>
 
             </div>
-            {/* </div> */}
+            </div>
         </>
     )
 }
