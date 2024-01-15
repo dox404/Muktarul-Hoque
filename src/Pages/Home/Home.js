@@ -10,7 +10,7 @@ function Home() {
         <div className="h-auto">
           <h1 className="font-semibold text-4xl name-text"><Typewriter
             words={[' Muktarul Hoque']}
-            loop={0}
+            // loop={0}
             cursor
             cursorStyle='|'
             typeSpeed={50}

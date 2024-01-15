@@ -7,7 +7,7 @@ function layout() {
             <div className="main grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
                 <div classname="left h-screen">
 
-                    <div className="h-screen bg-white-300 overflow-auto">
+                    <div className="h-screen bg-white-300 overflow-auto lg:overflow-hidden xl:overflow-hidden 2xl:overflow-hidden">
                         <Navbar />
                         
                         <div className='flex h-screen justify-center items-center grid grid-cols-1 gap-0'>
@@ -22,7 +22,7 @@ function layout() {
                 <div classname="right h-screen">
                     <div className="h-screen bg-red-300 hidden lg:block xl:block 2xl:block">
                         <div className='flex h-screen justify-center items-center h-97 w-92'>
-                            <img src={require("../assets/Img/Mani.jpg")} className='rounded-full border-4 border-rose-500 m-auto h-64  animate-pulse hover:animate-bounce' alt="person" />
+                            <img src={require("../assets/Img/Mani.jpg")} className='rounded-full border-4 border-rose-500 m-auto h-64' alt="person" />
                         </div>
                     </div>
                 </div>

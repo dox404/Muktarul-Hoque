@@ -1,7 +1,7 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import Modal from '../../Components/Modal/Modal'
 function Projects() {
-
+const [showModal,setShowModal]=useState(false)
 
   let projects = [
     {
@@ -34,25 +34,20 @@ function Projects() {
 
   return (
     <>
-    <div className="heading">
-      <h1>
-        projects
-      </h1>
-    </div>
-      {/* <div className="grid flex items-center justify-center"> */}
+    <Modal isVisible={showModal} onClose={()=>setShowModal(false)}/>
+      <div className="grid flex items-center justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:lg-cols-3 items-center justify-center h-fit w-fit gap-1 m-5">
-        
 
           {
             projects.map((value) => {
               return (
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-45">
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-64">
                   <div class="w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md duration-300 hover:scale-105 hover:shadow-xl h-64">
                     <h1 class="mt-2 text-center text-2xl font-bold text-gray-500">{value.prjectName}</h1>
                     <p class="my-4 text-center text-sm text-gray-500">Woah, successfully completed 3/5 Tasks</p>
                     <div class="space-x-4 bg-gray-100 py-4 text-center">
                       <button class="inline-block rounded-md bg-green-500 px-10 py-2 font-semibold text-red-100 shadow-md duration-75 hover:bg-red-400">Live URL</button>
-                      <button class="inline-block rounded-md bg-blue-500 px-6 py-2 font-semibold text-green-100 shadow-md duration-75 hover:bg-green-400">About</button>
+                      <button class="inline-block rounded-md bg-blue-500 px-6 py-2 font-semibold text-green-100 shadow-md duration-75 hover:bg-green-400" onClick={()=>setShowModal(true)}>About</button>
 
 
 
@@ -77,7 +72,7 @@ function Projects() {
           }
 
         </div>
-      {/* </div> */}
+      </div>
 
     </>
   )
