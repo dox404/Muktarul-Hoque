@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
 
-      <div className="items gap-1 w-50 ml-20 mr-20 mt-5">
+      <div className="items gap-1 ml-10 mr-10">
         <div className="h-auto">
           <h1 className="font-semibold text-4xl name-text"><Typewriter
             words={[' Muktarul Hoque']}
@@ -28,7 +28,8 @@ function Home() {
             throughout the development lifecycle</p>
         </div>
         <div class="flex gap-4">
-          <a href={ExampleDoc} download><button className="btn btn-primary  flex-auto w-45 button">Download Resume</button></a>
+          <a href={ExampleDoc} download><button className="btn btn-primary  flex-auto w-45 button fa fa-download"><i className="fa fa-download" aria-hidden="true"></i>
+Download Resume</button></a>
           {/* <button className="btn btn-outline flex-auto w-45">Hire Me</button> */}
 
         </div>

@@ -19,9 +19,9 @@ function layout() {
 
                     </div>
                 </div>
-                <div classname="right h-screen">
+                <div classname="right h-screen w-50">
                     <div className="h-screen bg-red-300 hidden lg:block xl:block 2xl:block">
-                        <div className='flex h-screen justify-center items-center h-97 w-92'>
+                        <div className='flex h-screen justify-center items-center h-99 w-99'>
                             <img src={require("../assets/Img/Mani.jpg")} className='rounded-full border-4 border-rose-500 m-auto h-64' alt="person" />
                         </div>
                     </div>
