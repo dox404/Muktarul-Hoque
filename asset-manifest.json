@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Muktarul-Hoque/static/css/main.4083c292.css",
-    "main.js": "/Muktarul-Hoque/static/js/main.5b942de3.js",
-    "static/media/MUKTARUL_HOQUE-CV(2023).pdf": "/Muktarul-Hoque/static/media/MUKTARUL_HOQUE-CV(2023).033b4e37f0d3b13b9b18.pdf",
-    "static/media/Mani.jpg": "/Muktarul-Hoque/static/media/Mani.ce04ef669460fcffbcd1.jpg",
-    "index.html": "/Muktarul-Hoque/index.html",
-    "main.4083c292.css.map": "/Muktarul-Hoque/static/css/main.4083c292.css.map",
-    "main.5b942de3.js.map": "/Muktarul-Hoque/static/js/main.5b942de3.js.map"
+    "main.css": "/static/css/main.4083c292.css",
+    "main.js": "/static/js/main.722e738b.js",
+    "static/media/MUKTARUL_HOQUE-CV(2023).pdf": "/static/media/MUKTARUL_HOQUE-CV(2023).033b4e37f0d3b13b9b18.pdf",
+    "static/media/Mani.jpg": "/static/media/Mani.ce04ef669460fcffbcd1.jpg",
+    "index.html": "/index.html",
+    "main.4083c292.css.map": "/static/css/main.4083c292.css.map",
+    "main.722e738b.js.map": "/static/js/main.722e738b.js.map"
   },
   "entrypoints": [
     "static/css/main.4083c292.css",
-    "static/js/main.5b942de3.js"
+    "static/js/main.722e738b.js"
   ]
 }
