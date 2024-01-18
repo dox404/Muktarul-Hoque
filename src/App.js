@@ -2,7 +2,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 // import Layout from './layout/default'
-import Layout from './layout/layout'
+import Layout from './layout/layyyyout'
 
 
 function App() {

@@ -9,12 +9,12 @@ function layout() {
 
                     <div className="h-screen bg-white-300 overflow-auto lg:overflow-hidden xl:overflow-hidden 2xl:overflow-hidden">
                         <Navbar />
-                        
+
                         <div className='flex h-screen justify-center items-center grid grid-cols-1 gap-0'>
-                        <img src={require("../assets/Img/Mani.jpg")} className='h-40 rounded-full  border-4 border-rose-500 block lg:hidden xl:hidden 2xl:hidden m-auto' alt="person" />
-                        <div className="pb-10">
-                        <Routes />
-                        </div>
+                            <img src={require("../assets/Img/Mani.jpg")} className='h-40 rounded-full  border-4 border-rose-500 block lg:hidden xl:hidden 2xl:hidden m-auto' alt="person" />
+                            <div className="pb-10">
+                                <Routes />
+                            </div>
                         </div>
 
                     </div>
@@ -26,6 +26,7 @@ function layout() {
                         </div>
                     </div>
                 </div>
+            
             </div>
         </>
     )

@@ -43,6 +43,7 @@ function Projects() {
     <Modal isVisible={showModal} onClose={() => setShowModal(false)} prjectName={tempData[1]} TechStack={tempData[2]} description={tempData[3]} Url={tempData[4]}/>
       
       <div className="grid flex items-center justify-center">
+      <h1 className="justify-center items-center flex Heading text-2xl">Projects</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:lg-cols-3 items-center justify-center h-fit w-fit gap-1 m-5">
 
           {
@@ -50,7 +51,7 @@ function Projects() {
               
               return (
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-64">
-                  <div class="w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md duration-300 hover:scale-105 hover:shadow-xl h-64">
+                  <div class="w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md duration-300 hover:shadow-xl h-64">
                     <h1 class="mt-2 text-center text-2xl font-bold text-gray-500">{value.prjectName}</h1>
                     <p class="my-4 text-center text-sm text-gray-500"></p>
                     <div class="space-x-4  py-4 text-center">
