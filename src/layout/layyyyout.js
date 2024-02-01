@@ -34,7 +34,7 @@ function layout() {
                         <Navbar />
 
                         <div className='flex h-screen justify-center items-center grid grid-cols-1 gap-0'>
-                            <img src={require("../assets/Img/Muktarul-Hoque.jpg")} className='h-40 w-40 rounded-full  border-4 border-rose-500 block lg:hidden xl:hidden 2xl:hidden m-auto' alt="person" />
+                            <img src={require("../assets/Img/Mani.jpg")} className='h-40 rounded-full  border-4 border-rose-500 block lg:hidden xl:hidden 2xl:hidden m-auto' alt="person" />
                             <div className="pb-10">
                                 <Routes />
                             </div>
@@ -47,11 +47,12 @@ function layout() {
                     <div classname="right h-screen w-50 ">
                         <div className="h-screen bg-red-300 ">
                             <div className='flex h-screen justify-center items-center h-99 w-99'>
-                                <img src={require("../assets/Img/Muktarul-Hoque.jpg")} className='rounded-full border-4 border-rose-500 -mr-50 h-64 w-64' alt="person" />
+                                <img src={require("../assets/Img/Mani.jpg")} className='rounded-full border-4 border-rose-500 -mr-50 h-64  transform hover:animate-wiggle' alt="person" />
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </>
     )
