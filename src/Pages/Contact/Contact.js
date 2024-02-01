@@ -44,8 +44,10 @@ function Contact() {
 
   return (
     <>
+    <h2>hii</h2>
+    <h1 className='justify-center items-center flex Heading text-3xl '>CONTACT ME</h1>
       <div className="grid flex items-center justify-center">
-      <h1 className='justify-center items-center flex Heading text-2xl '>Contact Me</h1>
+      
       <form ref={form} onSubmit={sendEmail} className="max-w-sm mx-auto w-full lg:w-96 xl:w-96 2xl:w-96">
         <div className="mb-5">
           <label for="email" className="block mb-2 text-sm font-medium text-black-900">Your Name</label>
@@ -61,8 +63,9 @@ function Contact() {
             <textarea id="message" name="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 min-w-[60px]" placeholder="Your meassage"></textarea>
           </div>
 
-        
+        <div className="flex justify-center items-center">
         {loading ? <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 disabled">Sending</button>: <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-6">Submit</button>}
+        </div>
       </form>
       </div>
 
