@@ -34,25 +34,31 @@ function layout() {
                         <Navbar />
 
                         <div className='flex h-screen justify-center items-center grid grid-cols-1 gap-0'>
+
                             <img src={require("../assets/Img/Mani.jpg")} className='h-40 rounded-full  border-4 border-rose-500 block lg:hidden xl:hidden 2xl:hidden m-auto' alt="person" />
-                            <div className="pb-10">
-                                <Routes />
-                            </div>
+
+                            <Routes />
+
                         </div>
 
                     </div>
                 </div>
                 <div className="bg-red-100 col-span-4 hidden lg:block xl:block 2xl:block">
-
                     <div classname="right h-screen w-50 ">
-                        <div className="h-screen bg-red-300 ">
+                        <div className="h-screen bg-red-300">
+                            {/* <div className="w-100 justify-end"> */}
+                                {/* <div className="flex w-full justify-end gap-5 absolute">
+                                    <img src={require("../assets/Social/githubb.png")} className='-mr-50 h-20  transform hover:animate-wiggle' alt="person" />
+                                    <img src={require("../assets/Social/linkedinnn.png")} className='-mr-50 h-20  transform hover:animate-wiggle' alt="person" />
+                                </div> */}
+                            {/* </div> */}
                             <div className='flex h-screen justify-center items-center h-99 w-99'>
                                 <img src={require("../assets/Img/Mani.jpg")} className='rounded-full border-4 border-rose-500 -mr-50 h-64  transform hover:animate-wiggle' alt="person" />
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </>
     )

@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
 
-      <div className="items gap-1 ml-10 mr-10">
+      <div className="items gap-1 ml-10 mr-10 mt-0">
         <div className="h-auto">
           <h1 className="font-semibold text-4xl name-text"><Typewriter
             words={[' Muktarul Hoque']}
@@ -29,7 +29,7 @@ function Home() {
         </div>
         <div class="flex gap-4">
           <a href={ExampleDoc} download><button className="btn btn-primary  flex-auto w-45 button fa fa-download"><i className="fa fa-download" aria-hidden="true"></i>
-Download Resume</button></a>
+            Download Resume</button></a>
           {/* <button className="btn btn-outline flex-auto w-45">Hire Me</button> */}
 
         </div>

@@ -44,7 +44,6 @@ function Contact() {
 
   return (
     <>
-    <h2>hii</h2>
     <h1 className='justify-center items-center flex Heading text-3xl '>CONTACT ME</h1>
       <div className="grid flex items-center justify-center">
       
