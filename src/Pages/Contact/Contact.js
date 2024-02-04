@@ -44,7 +44,7 @@ function Contact() {
     <>
     
       <div className="grid flex items-center justify-center">
-      <h1 className='justify-center items-center flex Heading text-3xl mb-20'>CONTACT ME</h1>
+      {/* <h1 className='justify-center items-center flex Heading text-3xl mb-10'>CONTACT ME</h1> */}
       <form ref={form} onSubmit={sendEmail} className="max-w-sm mx-auto w-full lg:w-96 xl:w-96 2xl:w-96">
         <div className="mb-5">
           <label for="email" className="block mb-2 text-sm font-medium text-black-900">Your Name</label>
@@ -57,7 +57,7 @@ function Contact() {
 
           <div className="max-w-sm mx-auto">
             <label for="message" className="block mb-2 text-sm font-medium text-gray-900">Your message</label>
-            <textarea id="message" name="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 min-w-[60px]" placeholder="Your meassage"></textarea>
+            <textarea id="message" name="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 min-w-[60px] min-h-32 max-h-32" placeholder="Your meassage"></textarea>
           </div>
 
         <div className="flex justify-center items-center">
