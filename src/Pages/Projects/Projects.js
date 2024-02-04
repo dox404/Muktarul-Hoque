@@ -47,9 +47,8 @@ function Projects() {
   return (
     <>
     <Modal isVisible={showModal} onClose={() => setShowModal(false)} prjectName={tempData[1]} TechStack={tempData[2]} description={tempData[3]} Url={tempData[4]} SourceCode={tempData[5]}/>
-    <h1 className="justify-center items-center flex Heading text-2xl">Projects</h1>
       <div className="grid flex items-center justify-center">
-      
+      <h1 className="justify-center items-center flex Heading text-2xl">Projects</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:lg-cols-3 items-center justify-center h-fit w-fit gap-1 m-5">
 
           {

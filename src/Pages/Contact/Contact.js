@@ -12,7 +12,6 @@ function Contact() {
     setLoading(true)
     await emailjs.sendForm('service_ism72rs', 'template_y10vd97', form.current, 'xUFSG0ZHbIGku9_8A')
       .then((result) => {
-        
         toast.success('Meassage Sent', {
           position: "top-center",
           autoClose: 5000,
@@ -22,7 +21,6 @@ function Contact() {
           draggable: true,
           progress: undefined,
           theme: "light",
-          
       });
       console.log(form)
       setLoading(false)
