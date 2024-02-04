@@ -9,7 +9,8 @@ function Projects() {
       prjectName: "News App",
       description: "An Api based project with using only react js and external api that can fetch the some of current news.In here The NewsApi.org website's API is used for the real time news data.It shows the news with the tumbnail and Read more option from that option the user can redirect to the official source of the news",
       TechStack: "React js, API",
-      Url: "This is the live url for news App"
+      Url: "#",
+      SourceCode: "https://github.com/dox404/React-Newsapp"
 
     },
     {
@@ -17,22 +18,27 @@ function Projects() {
       prjectName: "E commerce Website",
       description: " Developed a project with  React Js as Frontend with React Hooks and some packages like axios,formik,react-bootstrap.Node Js is used as backend with some packages like express for server creation multer for file handeling , mongoose for connection with databse and aws-sdk for connect with AWS. MongoDB is used for the databse to store user or the product data and AWS S3 Bucket is used for the image storage",
       TechStack: "React Js,Node Js,MongoDb, AWS",
-      Url: "This is live url for e commerce"
+      Url: "#",
+      SourceCode:{
+        frontEnd:"https://github.com/dox404/E-commerce_Frontend",
+        backEnd:"https://github.com/dox404/E-commerce_Backend"
+      }
     },
     {
       id: "03",
       prjectName: "Brain tumor detection using deep learning",
       description: " A deep learning project using the YOLO object detection model that is trained in the Brain Tumor dataset. Here the YOLO v8 is used.The model is trained upto 100 epochs that can give quite good accuracy.",
       TechStack: "ultralytics,pandas,numpy,matplotlib,OpenCv",
-      Url: "https://colab.research.google.com/drive/1KFyT1cqoDqs7Ojc97RXoa6oHwdBbpnxY?usp=sharing"
+      Url: "#",
+      SourceCode: "https://colab.research.google.com/drive/1KFyT1cqoDqs7Ojc97RXoa6oHwdBbpnxY?usp=sharing"
     }
   ]
 
 
 
 
-  const getData=(prjectName,TechStack,description,Url)=>{
-    let tempData=[prjectName,TechStack,description,Url]
+  const getData=(prjectName,TechStack,description,Url,SourceCode)=>{
+    let tempData=[prjectName,TechStack,description,Url,SourceCode]
     // console.log(tempData)
     setTempData([1,...tempData])
     setShowModal(true)
@@ -40,10 +46,10 @@ function Projects() {
 
   return (
     <>
-    <Modal isVisible={showModal} onClose={() => setShowModal(false)} prjectName={tempData[1]} TechStack={tempData[2]} description={tempData[3]} Url={tempData[4]}/>
-      
+    <Modal isVisible={showModal} onClose={() => setShowModal(false)} prjectName={tempData[1]} TechStack={tempData[2]} description={tempData[3]} Url={tempData[4]} SourceCode={tempData[5]}/>
+    <h1 className="justify-center items-center flex Heading text-2xl">Projects</h1>
       <div className="grid flex items-center justify-center">
-      <h1 className="justify-center items-center flex Heading text-2xl">Projects</h1>
+      
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:lg-cols-3 items-center justify-center h-fit w-fit gap-1 m-5">
 
           {
@@ -52,12 +58,12 @@ function Projects() {
               return (
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-64">
                   <div class="w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md duration-300 hover:shadow-xl h-64">
-                    <h1 class="mt-2 text-center text-2xl font-bold text-gray-500">{value.prjectName}</h1>
+                    <h1 class="mt-2 text-center text-2xl font-bold text-gray-500 p-2">{value.prjectName}</h1>
                     <p class="my-4 text-center text-sm text-gray-500"></p>
                     <div class="space-x-4  py-4 text-center">
                       {/* <button class="inline-block rounded-md bg-green-500 px-10 py-2 font-semibold text-red-100 shadow-md duration-75 hover:bg-red-400"></button> */}
                       {/* <p>{value.Url}</p> */}
-                      <button class="inline-block rounded-md bg-blue-500 px-6 py-2 font-semibold text-green-100 shadow-md duration-75 hover:bg-red-400" onClick={()=>getData(value.prjectName,value.TechStack,value.description,value.Url)}>About</button>
+                      <button class="inline-block rounded-md bg-blue-500 px-6 py-2 font-semibold text-green-100 shadow-md duration-75 hover:bg-red-400" onClick={()=>getData(value.prjectName,value.TechStack,value.description,value.Url, value.SourceCode)}>About</button>
                     </div>
                   </div>
                 </div> 

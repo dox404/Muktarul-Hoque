@@ -44,9 +44,9 @@ function Contact() {
 
   return (
     <>
-    <h1 className='justify-center items-center flex Heading text-3xl '>CONTACT ME</h1>
+    
       <div className="grid flex items-center justify-center">
-      
+      <h1 className='justify-center items-center flex Heading text-3xl mb-20'>CONTACT ME</h1>
       <form ref={form} onSubmit={sendEmail} className="max-w-sm mx-auto w-full lg:w-96 xl:w-96 2xl:w-96">
         <div className="mb-5">
           <label for="email" className="block mb-2 text-sm font-medium text-black-900">Your Name</label>
