@@ -25,7 +25,7 @@ function Modal({ isVisible, onClose, prjectName, TechStack, description, Url, So
                         <p>{description}</p>
 
                         <div className="card-actions">
-                            <a href={SourceCode} target="_blank"><button className="btn btn-primary">Source Code</button></a>
+                            <a href={SourceCode} target="_blank" rel="noreferrer"><button className="btn btn-primary">Source Code</button></a>
                             <button className="btn btn-primary" disabled>Live Url</button>
 
                         </div>
