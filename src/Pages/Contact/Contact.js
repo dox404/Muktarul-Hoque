@@ -52,7 +52,7 @@ function Contact() {
         </div>
         <div class="mb-5">
           <label for="password" className="block mb-2 text-sm font-medium text-gray-900">Email:</label>
-          <input type="email" id="email" name="user_email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Your email" required />
+          <input type="email" id="email" name="user_email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Your Email" required />
         </div>
 
           <div className="max-w-sm mx-auto">
