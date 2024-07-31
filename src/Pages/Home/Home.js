@@ -1,5 +1,5 @@
 import React from 'react'
-import ExampleDoc from './Resume/MUKTARUL_HOQUE-CV(2023).pdf'
+import ExampleDoc from './Resume/Resume-Muktaru-Hoque(2024) (2).pdf'
 import { Typewriter } from 'react-simple-typewriter'
 import './Home.css'
 function Home() {
