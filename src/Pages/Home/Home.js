@@ -1,8 +1,18 @@
 import React from 'react'
-import ExampleDoc from './Resume/Resume-Muktaru-Hoque(2024) (2).pdf'
+import ExampleDoc from './Resume/Hoque_M.pdf'
 import { Typewriter } from 'react-simple-typewriter'
 import './Home.css'
 function Home() {
+
+  const onButtonClick = () => {
+    const pdfUrl = {ExampleDoc};
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "document.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
   return (
     <>
 
@@ -28,7 +38,8 @@ function Home() {
             throughout the development lifecycle</p>
         </div>
         <div class="flex gap-4">
-          <a href={ExampleDoc} download><button className="btn btn-primary  flex-auto w-45 button fa fa-download"><i className="fa fa-download" aria-hidden="true"></i>
+        {/* href={ExampleDoc} download */}
+          <a href={ExampleDoc} download="M_Hoque_Resume(2024).pdf"><button className="btn btn-primary  flex-auto w-45 button fa fa-download"><i className="fa fa-download" aria-hidden="true"></i>
             Download Resume</button></a>
           {/* <button className="btn btn-outline flex-auto w-45">Hire Me</button> */}
 
